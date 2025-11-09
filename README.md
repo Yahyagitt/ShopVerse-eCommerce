@@ -39,17 +39,6 @@ It features dynamic product rendering, a persistent cart, wishlist, product filt
 
 ## 📱 Screenshots
 
-<img width="1920" height="1080" alt="Screenshot (133)" src="https://github.com/user-attachments/assets/d2b42a16-8161-41be-b5f8-6e96ffe7c4b7" />
-<img width="1920" height="1080" alt="Screenshot (132)" src="https://github.com/user-attachments/assets/7ed54ac6-c9ae-4ab5-b078-545651aa5d00" />
-<img width="1920" height="1080" alt="Screenshot (134)" src="https://github.com/user-attachments/assets/7e339337-1b5d-4895-9714-0746d3ec5183" />
-<img width="1920" height="1080" alt="Screenshot (135)" src="https://github.com/user-attachments/assets/f9268581-0da5-4913-8bed-311fa3fb9c1e" />
-<img width="1920" height="1080" alt="Screenshot (136)" src="https://github.com/user-attachments/assets/821075a5-732e-42ca-9326-381f6c705494" />
-<img width="1920" height="1080" alt="Screenshot (138)" src="https://github.com/user-attachments/assets/5b6bee6e-f213-4498-8859-ab86abe7b860" />
-<img width="1920" height="1080" alt="Screenshot (139)" src="https://github.com/user-attachments/assets/79db6e9c-cecd-423e-8f0e-d20dd28fd847" />
-<img width="1920" height="1080" alt="Screenshot (140)" src="https://github.com/user-attachments/assets/003538ee-a868-41f5-9219-77eb260249b1" />
-<img width="1920" height="1080" alt="Screenshot (141)" src="https://github.com/user-attachments/assets/baab8b21-226c-439c-b7a4-37025d7d1ec9" />
-<img width="1920" height="1080" alt="Screenshot (142)" src="https://github.com/user-attachments/assets/1e9c701d-d45e-49ef-a539-e2a4738df053" />
-<img width="1920" height="1080" alt="Screenshot (143)" src="https://github.com/user-attachments/assets/402cd80a-b3a5-48e1-a352-cab225076599" />
 
 ---
 
