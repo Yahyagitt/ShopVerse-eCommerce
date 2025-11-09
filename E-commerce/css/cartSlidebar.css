@@ -1,0 +1,154 @@
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: none;
+    z-index: 2000;
+  }
+  
+body.loaded .cart-sidebar {
+    transition: transform 0.3s ease-in-out;
+  }
+
+.cart-sidebar.active {
+    transform: translateX(0);
+  }
+  
+
+
+.cart-sidebar-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity
+    0.3s ease;
+    z-index: 1500;
+}
+
+.cart-sidebar-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.cart-sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.cart-sidebar-header h2{
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.close-cart-btn{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.close-cart-btn:hover{
+    color: #ff6b6b;
+}
+
+
+.cart-sidebar-items{
+    flex: 1;
+    padding: 15px 20px;
+    overflow-y: auto;
+}
+
+.cart-sidebar-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.cart-sidebar-item img{
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-sidebar-item p{
+    flex: 1;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+}
+
+
+.cart-sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    background-color: #fafafa;
+}
+
+.sidebar-total{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.view-cart-btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.view-cart-btn:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+
+@media (max-width: 768px) {
+    .cart-sidebar {
+      width: 80%;
+    }
+  }
+
+.empty-msg {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    margin-top: 20px;
+}
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./practice.js"></script>
+</head>
+<body>
+    <div class="add-to-cart-div">
+       <button class="add-to-cart">add</button> 
+    </div>
+    
+</body>
+</html>
+| Expression                             | What it does                                       |
+| -------------------------------------- | -------------------------------------------------- |
+| `window.location.href`                 | Gets or sets the current page URL                  |
+| `window.location.href = "page.html"`   | Redirects to another page                          |
+| `window.location.reload()`             | Reloads the current page                           |
+| `window.location.replace("page.html")` | Redirects *without* adding history (can’t go back) |
+
+
+Example Difference
+✅ Using sessionStorage
+sessionStorage.setItem("username", "Yahya");
+console.log(sessionStorage.getItem("username")); // "Yahya"
+If you refresh → still there.
+If you close the tab and reopen → gone.
+
+✅ Using localStorage
+localStorage.setItem("username", "Yahya");
+console.log(localStorage.getItem("username")); // "Yahya
+If you refresh or close/reopen → still there until you manually clear it.
+🔐 Which one do we use for login/session?
+We’ll use localStorage, not sessionStorage, because:
+We want to remember the user even after refresh.
+Real websites use cookies or JWT tokens for persistent sessions,
+but localStorage is a simpler version of that idea.
+
+⚙️ The function in parentheses — what’s happening?
+In your protected.js, you saw this:
+
+(function protectPage() {
+  // code...
+})();
+That’s called an IIFE —
+👉 Immediately Invoked Function Expression
+Wrapping it in parentheses turns it into an expression — a function value rather than a declaration.
+Adding () at the end immediately calls that function.

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVerse | Ecommerce Website</title>
+    <link rel="icon" type="image/svg+xml" href="./images/icons/SVLogo.png">
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="./css/cartSlidebar.css">
+    <link rel="stylesheet" href="./css/wishlist.css">
+    <script defer src="js/auth.js"></script>
+    <script defer src="js/navbar.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/cartSidebar.js"></script>
+    <script defer src="js/protected.js"></script>
+    <script type="module" src="js/home.js"></script>
+    
+
+    
+
+
+    
+</head>
+<body>
+    
+    
+    <header>
+        <nav class="navbar">
+          
+          <div class="menu-icon" id="menuIcon">☰</div>
+      
+          
+          <div class="logo"><h3>ShopVerse</h3></div>
+      
+          
+          <div class="cart-icon" id="cart-icon">🛒</div>
+      
+          
+          <div class="dropdown-menu" id="dropdownMenu">
+            <p class="dropdown-greeting">👋 Hi, <span id="username">User</span></p>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="wishlist.html">Wishlist</a></li>
+              <li><button id="logoutBtn" class="logout-btn">Logout</button></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+
+     
+      <section class="hero">
+        <h1>Welcome to ShopVerse</h1>
+        <p>Find your style. Shop the latest products now.</p>
+        <button class="btn">Shop Now</button>
+      </section>
+
+
+      
+      <section class="search-filter">
+        <div class="search-box">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search products..." 
+          />
+        </div>
+      
+        <div class="filter-box">
+          <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelry</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
+          </select>          
+        </div>
+
+        <div class="sort-box">
+          <select id="sortOptions">
+            <option value="default">Sort By</option>
+            <option value="priceLowHigh">Price: Low to High</option>
+            <option value="priceHighLow">Price: High to Low</option>
+            <option value="nameAZ">Name: A–Z</option>
+            <option value="nameZA">Name: Z–A</option>
+          </select>
+        </div>
+      </section>
+
+
+      
+      <section class="products" id="product-list">
+        
+      </section>
+
+
+      <div class="cart-sidebar-overlay" id="cartOverlay"></div>
+
+        <aside class="cart-sidebar" id="cartSidebar">
+            <div class="cart-sidebar-header">
+                <h2>Your Cart</h2>
+                <button id="closeCartBtn" class="close-cart-btn">❌</button>
+            </div>
+
+            <div class="cart-sidebar-items" id="cartSidebarItems">
+                
+            </div>
+
+            <div class="cart-sidebar-footer">
+                <div class="sidebar-total">
+                    <p>Total:</p>
+                    <span id="sidebarTotal">₹0</span>
+                </div>
+                <a href="cartPage.html" class="view-cart-btn">View Full Cart</a>
+
+            </div>
+        </aside>
+
+        <footer>
+          <p>© 2025 ShopVerse. Built by Mohammed Yahya Ahmed.</p>
+        </footer>
+</body>
+</html>

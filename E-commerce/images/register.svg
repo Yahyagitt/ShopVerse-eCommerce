@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Animated gradient background -->
+    <radialGradient id="grad1" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#ff9a3c">
+        <animate attributeName="stop-color" values="#ff9a3c; #ff6b2d; #ff4500; #ff9a3c" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#ff4500">
+        <animate attributeName="stop-color" values="#ff4500; #ff6b2d; #ff9a3c; #ff4500" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </radialGradient>
+
+    <!-- Glowing bubble gradient -->
+    <radialGradient id="bubbleGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7e6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff9a3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#grad1)" />
+
+  <!-- Floating bubbles -->
+  <circle cx="200" cy="300" r="120" fill="url(#bubbleGrad)" opacity="0.7">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M0 0 Q50 -40 100 0 T200 0 T100 40 T0 0" />
+  </circle>
+
+  <circle cx="600" cy="300" r="100" fill="url(#bubbleGrad)" opacity="0.6">
+    <animateMotion dur="10s" repeatCount="indefinite" path="M0 0 Q-60 60 -120 0 T-200 0 T-120 -60 T0 0" />
+  </circle>
+
+  <circle cx="400" cy="150" r="80" fill="url(#bubbleGrad)" opacity="0.4">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M0 0 Q30 50 60 0 T120 0 T60 -50 T0 0" />
+  </circle>
+
+  <!-- Soft pulsing glow -->
+  <circle cx="400" cy="300" r="250" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2">
+    <animate attributeName="r" values="240;260;240" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.15;0.35;0.15" dur="4s" repeatCount="indefinite" />
+  </circle>
+</svg>

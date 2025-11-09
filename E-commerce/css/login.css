@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+
+.login-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+}
+
+.register-side{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: url("../images/registerlogin.svg");
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 48px;
+    gap: 16px;
+}
+
+.register-side h1{
+    font-size: 2.25rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.register-side p {
+    color: rgba(255,255,255,0.95);
+    max-width: 360px;
+    font-size: 1.2rem;
+}
+
+.register-btn{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 28px;
+    font-weight: 700;
+    display: inline-block;
+    box-shadow: 3px 3px 5px rgba(252, 252, 252, 0.918);
+    transition: background 0.8s ease, transfrom 0.12s ease;
+}
+
+.register-btn:hover,
+.register-btn:focus {
+  background-color: #333;
+  transform: translateY(-3px);
+}
+
+
+
+.login-side{
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.login-box{
+    width: 360px;
+    max-width: 92%;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 34px;
+    box-shadow: 10px 10px 10px rgba(245, 29, 29, 0.6);
+}
+
+.login-box h2{
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    color: #111;
+    text-align: left;
+}
+
+.login-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.login-box label{
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 6px;
+    display: block;
+}
+
+
+
+.login-box input {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.18s ease, box-shadow 0.12s ease;
+}
+
+.login-box input::placeholder { color: #aaa }
+
+.login-box input:focus {
+    border-color: #ff3b2e;
+    box-shadow: 2px 8px 18px rgb(209, 30, 18);
+}
+
+.login-btn {
+    margin-top: 6px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.18s ease, transform 0.12s ease;
+}
+  
+.login-btn:hover,
+.login-btn:focus {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 992px) {
+    .register-side h1 { font-size: 2rem; }
+    .register-side { padding: 36px; }
+    .login-box { padding: 28px; width: 340px; }
+}
+
+
+@media (max-width: 768px) {
+    .login-container { 
+      flex-direction: column; 
+      height: auto; 
+      min-height: 100vh; 
+    }
+  
+    .register-side,
+    .login-side {
+      width: 100%;
+      flex: none;
+      padding: 36px 22px;
+    }
+  
+    .register-side { order: 0; }
+    .login-side { order: 1; }
+  
+    .register-side h1 { font-size: 1.8rem; }
+    .register-side p { font-size: 0.98rem; }
+  
+    .login-box { 
+      width: 100%; 
+      max-width: 640px; 
+      padding: 22px; 
+      border-radius: 10px; 
+    }
+  
+    .login-box h2 { text-align: center; }
+  
+    .register-btn,
+    .login-btn {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+}
+  
+
+@media (max-width: 420px) {
+    .register-side { padding: 28px 16px; }
+    .login-box { padding: 18px; }
+    .register-side h1 { font-size: 1.6rem; }
+    .login-box h2 { font-size: 1.15rem; }
+}
